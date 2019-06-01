@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "Daniela",
+      "lastname": "Perez",
+      "email": "daniela@gmail.com",
+      "phone": "913628428",
+      "sexo": "femenino",
+      "id": 1
+    },
+    {
+      "name": "Juan",
+      "lastname": "Dominguez",
+      "email": "juan@gmail.com",
+      "phone": "925382145",
+      "sexo": "masculino",
+      "id": 2
+    },
+    {
+      "name": "Cecilia",
+      "lastname": "Rosales",
+      "email": "cecilia@gmail.com",
+      "phone": "921456284",
+      "sexo": "femenino",
+      "id": 3
+    },
+    {
+      "name": "Ximena",
+      "lastname": "De la cruz",
+      "email": "ximenaa@gmail.com",
+      "phone": "913325252",
+      "sexo": "femenino",
+      "id": 4,
+      "updated_at": 1559425130396,
+      "status": null
+    },
+    {
+      "name": "Luis",
+      "lastname": "Cordova",
+      "email": "luis@gmail.com",
+      "phone": 91823274,
+      "sexo": "masculino",
+      "id": 5
+    },
+    {
+      "name": "Gisela",
+      "lastname": "Marquez",
+      "email": "gisela@gmail.com",
+      "phone": 91234566,
+      "sexo": "femenino",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<div class="user-edit-component">
+    <div class="container">
+        <h2 class="mb-2 mt-0">Nuevo Usuario</h2>
+        <div class="row">
+            <form class="col-md-8 col-sm-12" autocomplete="off" [formGroup]="newUserForm">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" name="name" formControlName="name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" class="form-control" name="lastname" formControlName="lastname" />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" name="email" formControlName="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="number" class="form-control" name="phone" formControlName="phone" />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Sexo</label>
+                    <input type="text" class="form-control" name="sexo" formControlName="sexo" />
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-light" type="button" (click)="onCancel()">Cancelar</button>
+                    <button class="btn btn-primary ml-3" (click)="onSave(newUserForm)" type="button" [disabled]="newUserForm.invalid">Crear Usuario</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

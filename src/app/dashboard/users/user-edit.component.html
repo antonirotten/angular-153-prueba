@@ -1,0 +1,40 @@
+<div class="user-edit-component">
+    <div class="container" *ngIf="loaded">
+        <h2 class="mb-2 mt-0">Actualizar Usuario</h2>
+        <div class="row">
+            <form class="col-md-8 col-sm-12" autocomplete="off" #userForm="ngForm">
+                <div class="form-group">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" [(ngModel)]="model.name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Apellido</label>
+                    <input type="text" class="form-control" [(ngModel)]="model.lastname" name="lastname" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" [(ngModel)]="model.email" name="email" required email/>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="">phone</label>
+                    <input type="number" class="form-control" [(ngModel)]="model.phone" name="phone" required/>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="">sexo</label>
+                    <input type="text" class="form-control" [(ngModel)]="model.sexo" name="sexo" required/>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-light" type="button" (click)="onCancel()">Cancelar</button>
+                    <button class="btn btn-primary ml-3" (click)="onSave()" type="button" [disabled]="userForm.invalid">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
